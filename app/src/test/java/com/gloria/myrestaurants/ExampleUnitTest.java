@@ -1,4 +1,4 @@
-package com.gloria.myapplication;
+package com.gloria.myrestaurants;
 
 import org.junit.Test;
 

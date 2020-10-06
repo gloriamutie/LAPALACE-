@@ -1,5 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#121211"
+    android:layout_width="wrap_content">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/imageView"
+        android:src="@drawable/tausi"
+        android:scaleType="centerCrop" />
+
+    <Button
+        android:id="@+id/findRestaurantsButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorPrimaryText"
+        android:text="Find Restaurants"
+        android:textColor="@color/colorPrimaryLight" />
+
+    <TextView
+        android:id="@+id/appNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:text="MyRestaurants"
+        android:textColor="@color/colorPrimaryLight"
+        android:textSize="40sp" />
+
+    <EditText
+        android:id="@+id/locationEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/findRestaurantsButton"
+        android:background="@color/colorTextIcons"
+        android:layout_marginBottom="10dp"
+        android:padding="5dp"
+        android:layout_centerHorizontal="true"
+        android:hint="Enter zip code"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name" />
+
 
 </RelativeLayout>

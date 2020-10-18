@@ -8,12 +8,9 @@ import org.junit.runner.RunWith;
 
 import android.view.View;
 
-import androidx.test.rule.ActivityTestRule;
-import androidx.test.runner.AndroidJUnit4;
+import com.gloria.myrestaurants.ui.RestaurantsActivity;
 
-import org.junit.Rule;
 import org.junit.Test;
-import org.junit.runner.RunWith;
 
 import static androidx.test.espresso.Espresso.onData;
 import static androidx.test.espresso.Espresso.onView;
@@ -30,6 +27,7 @@ public class RestaurantsActivityInstrumentationTest {
     @Rule
     public ActivityTestRule<RestaurantsActivity> activityTestRule =
             new ActivityTestRule<>(RestaurantsActivity.class);
+
 
     @Test
     public void listItemClickDisplaysToastWithCorrectRestaurant() {
